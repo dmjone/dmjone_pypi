@@ -196,7 +196,7 @@ def projectsms():
             else:
                 print("Invalid option or insufficient permissions.\n")
 
-    def start():
+    def run():
         try:
             conn = connect_db()
             authenticate_user(conn)
@@ -221,3 +221,5 @@ def projectsms():
 
     def branding():
         print_fancy_header(project_info)
+        
+    run()
