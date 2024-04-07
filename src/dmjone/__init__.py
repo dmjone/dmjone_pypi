@@ -13,3 +13,6 @@ from .aarushi_TodoList import TodoList
 # kaustuv.__dict__.update(kaustuv_function2.__dict__)
 
 from .kaustuv import kaustuv
+
+# Section: Lakshika Tanwar
+import src.dmjone.lakshika as lakshika
