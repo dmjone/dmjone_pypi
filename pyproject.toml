@@ -4,15 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmjone"
-version = "0.1.9.7"
-description = "A suite of public welfare and educational tools developed by dmj.one, focusing on accessibility and innovation in learning resources."
+version = "0.1.9.8"
+description = "Public Welfare initiatives by dmj.one - Educational Initiative"
+summary = "A suite of public welfare and educational tools developed by dmj.one, focusing on accessibility and innovation in learning resources."
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
-    {name = "Divya Mohan", email = "contact@dmj.one"},
-    {name = "Aarushi Sharma", email = "aarushi@dmj.one"},
-    {name = "Kaustuv Sharma", email = "kaustuv@dmj.one"},
-    {name = "Lakshika Tanwar", email = "lakshika@dmj.one"},    
+    {name = "Divya Mohan", email = "divya@example.com"}
+]
+maintainers = [
+    {name = "Aarushi Sharma", email = "aarushi@example.com"},
+    {name = "Kaustuv Sharma", email = "kaustuv@example.com"},
+    {name = "Lakshika Tanwar", email = "lakshika@example.com"}
 ]
 keywords = ["education", "public welfare initiative", "learning resources", "shoolini university", "dmjone"]
 classifiers = [
