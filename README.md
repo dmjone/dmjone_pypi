@@ -1,23 +1,15 @@
 # dmjone
 
-Welcome to the official Python package for [dmj.one](https://dmj.one) - a platform dedicated to public welfare initiatives with a strong focus on educational projects. Our mission is to provide accessible, innovative, and valuable tools and resources for students, educators, and the general public to promote learning and educational excellence.
+Official Python package for [dmj.one](https://dmj.one) - a platform dedicated to public welfare initiatives with a strong focus on educational projects. Our mission is to provide accessible, innovative, and valuable tools and resources for students, educators, and the general public to promote learning and educational excellence.
 
 ## Installation
-
 Install `dmjone` via pip. Ensure you have Python 3.7 or later installed.
 
 ```bash
 pip install dmjone
 ```
 
-## Features
-
-- **Student Management System**: A simple yet powerful system for managing student records, designed for educational institutions.
-- **Lab Projects**: Access to various educational projects and lab work to facilitate learning and teaching.
-- **Educational Tools**: A collection of tools aimed at enhancing the learning experience.
-
 ## Quick Start
-
 Here's a quick example to get you started with `dmjone`:
 
 ```python
@@ -33,8 +25,34 @@ dmjone.hello()
 dmjone.aarushi.TodoList()
 ```
 
-## Documentation
+## Authors
+- **Divya Mohan** - *__init__* - [GitHub](https://github.com/divyamohan1993)
+- **Aarushi Sharma** - [GitHub](https://github.com/letscodeitup)
+- **Anshuman Mohanty** - [GitHub](https://github.com/anshumanmohanty00)
+- **Ashutosh Rana**
+- **Jatin Sharma**
+- **Kaustuv Sharma** - *Contributor* - [GitHub](https://github.com/kaustuvsharma)
+- **Lakshika Tanwar** - *Contributor* - [GitHub](https://github.com/LakshikaTanwar)
+- **Rijul Chaudhary** - [GitHub](https://github.com/Rijul777)
+- **Vedansh Sharma** - [GitHub](https://github.com/Elysian-Reverie)
 
+See also the list of [contributors](https://github.com/dmjone/dmjone_pypi/contributors) who participated in this project.
+
+## Features
+- **Student Management System**: A simple yet powerful system for managing student records, designed for educational institutions.
+- **Lab Projects**: Access to various educational projects and lab work to facilitate learning and teaching.
+- **Educational Tools**: A collection of tools aimed at enhancing the learning experience.
+
+## User Collaborations
+### Aarushi Sharma
+- **TodoList**: A simple To-Do List creator.
+### Kaustuv Sharma
+- **Calculate Absolute Value**: Calculate absolute value of a given number
+### Lakshika Tanwar
+- **Typecasting**: Demonstrate Typecasting in python
+- **Calculator**: Calculator to do arithmetic operations on numbers
+
+## Documentation
 <!-- For comprehensive documentation, visit [dmj.one/docs](https://dmj.one/docs). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`. -->
 For comprehensive documentation, visit [dmj.one](https://dmj.one). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
 
@@ -51,20 +69,6 @@ Contributions are what make the open-source community such an amazing place to l
 ## License
 
 Distributed under the GPL-3.0 License. See `LICENSE` for more information.
-
-## Authors
-
-- **Divya Mohan** - *Initial Work* - [GitHub](https://github.com/divyamohan1993)
-- **Aarushi Sharma** - [GitHub](https://github.com/letscodeitup)
-- **Anshuman Mohanty** - [GitHub](https://github.com/anshumanmohanty00)
-- **Ashutosh Rana**
-- **Jatin Sharma**
-- **Kaustuv Sharma** - [GitHub](https://github.com/kaustuvsharma)
-- **Lakshika Tanwar** - [GitHub](https://github.com/LakshikaTanwar)
-- **Rijul Chaudhary** - [GitHub](https://github.com/Rijul777)
-- **Vedansh Sharma** - [GitHub](https://github.com/Elysian-Reverie)
-
-See also the list of [contributors](https://github.com/dmjone/dmjone_pypi/contributors) who participated in this project.
 
 ## Acknowledgements
 
