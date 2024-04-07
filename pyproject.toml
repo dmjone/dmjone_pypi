@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmjone"
-version = "0.1.9.6"
+version = "0.1.9.7"
 description = "A suite of public welfare and educational tools developed by dmj.one, focusing on accessibility and innovation in learning resources."
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -16,9 +16,9 @@ authors = [
 ]
 keywords = ["education", "public welfare initiative", "learning resources", "shoolini university", "dmjone"]
 classifiers = [
-    "Development Status :: 0.2 - Beta",
+    "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
-    "Framework :: Flask",
+    #"Framework :: Flask",
     "Intended Audience :: Education",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
