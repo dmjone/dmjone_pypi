@@ -28,4 +28,4 @@ dependencies = [
 
 [project.urls]
 homepage = "https://dmj.one"
-repository = "https://github.com/dmjone/dmjone"
+repository = "https://github.com/dmjone/dmjone_pypi"
