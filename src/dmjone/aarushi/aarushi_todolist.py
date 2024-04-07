@@ -22,7 +22,7 @@ class TodoList:
         else:
             print("No tasks.")
 
-def main():
+def todolist():
     todo_list = TodoList()
 
     while True:
@@ -47,6 +47,3 @@ def main():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
-
-if __name__ == "__main__":
-    main()
