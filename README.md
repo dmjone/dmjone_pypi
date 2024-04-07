@@ -32,7 +32,7 @@ dmjone.lab4()
 
 ## Documentation
 
-For comprehensive documentation, visit [dmj.one/docs](https://go.dmj.one/docs). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
+For comprehensive documentation, visit [dmj.one/](https://dmj.one/). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
 
 ## Contributing
 
@@ -68,7 +68,7 @@ See also the list of [contributors](https://github.com/dmjone/dmjone_pypi/contri
 
 ## Contact
 
-For any queries, please reach out to us via [contact page on dmj.one](https://dmj.one/contact).
+For any queries, please reach out to us via [the message button on dmj.one](https://dmj.one/).
 
 ## Project Links
 
