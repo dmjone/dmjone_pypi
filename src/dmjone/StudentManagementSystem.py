@@ -1,15 +1,15 @@
-# Run when dmjone.StudentManagementSystem() or dmjone.projectsms() is called
+# Run when dmjone.projectsms() is called
 
-import mysql.connector
-import getpass
-import random
-import os
-import platform
-import shutil
-from datetime import datetime
-from faker import Faker
+def projectsms():
+    import mysql.connector
+    import getpass
+    import random
+    import os
+    import platform
+    import shutil
+    from datetime import datetime
+    from faker import Faker
 
-def StudentManagementSystem():
     faker = Faker()
 
     project_info = """
@@ -196,7 +196,7 @@ def StudentManagementSystem():
             else:
                 print("Invalid option or insufficient permissions.\n")
 
-    def start_from_init():
+    def start():
         try:
             conn = connect_db()
             authenticate_user(conn)
@@ -204,6 +204,14 @@ def StudentManagementSystem():
             print(f"Database connection failed: {err}")
         finally:
             conn.close()
+    # if __name__ == "__main__":
+        # try:
+            # conn = connect_db()
+            # authenticate_user(conn)
+        # except mysql.connector.Error as err:
+            # print(f"Database connection failed: {err}")
+        # finally:
+            # conn.close()
 
     def authenticate_user(conn):
         clear_terminal()
@@ -213,7 +221,5 @@ def StudentManagementSystem():
 
     def branding():
         print_fancy_header(project_info)
-
-    start_from_init()
-
-projectsms = StudentManagementSystem()
+    
+    start()
