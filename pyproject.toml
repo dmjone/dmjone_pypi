@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmjone"
-version = "0.1.2"
+version = "0.1.3"
 description = "Public Welfare initiatives by dmj.one - Educational Initiative"
 readme = "README.md"
 license = {file = "LICENSE"}
-license-files = ["LICENSE"]  # Explicitly list license files if you have multiple or non-standard ones.
+# license-files = ["LICENSE"]  # Explicitly list license files if you have multiple or non-standard ones.
 authors = [
     {name = "Divya Mohan"},
     {name = "Aarushi Sharma"},
@@ -18,7 +18,7 @@ authors = [
     {name = "Lakshika Tanwar"},
     {name = "Vedansh Sharma"},
 ]
-keywords = ["education", "management system", "college", "dbms", "dmjone", "shooliniuniversity", "shoolini", "Divya Mohan", "divyamohan1993"]
+keywords = ["education", "dmjone", "dmj.one", "shooliniuniversity", "shoolini"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
