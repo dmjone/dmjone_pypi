@@ -4,23 +4,33 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmjone"
-version = "0.1.0"
+version = "0.1.1"  # Remember to update this version before publishing new releases
 description = "A simple College Management System and collection of other projects."
-authors = [
-    {name = "Anshuman Mohanty"},
-    {name = "Ashutosh Rana"},
-    {name = "Divya Mohan"},
-    {name = "Jatin Sharma"},
-    {name = "Vedansh Sharma"}
-]
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["education", "management system", "college", "dbms", "dmjone", "shooliniuniversity", "shoolini"]
+license-files = ["LICENSE"]  # Explicitly list license files if you have multiple or non-standard ones
+authors = [
+    {name = "Divya Mohan"},
+    {name = "Aarushi Sharma"},
+    {name = "Anshuman Mohanty"},
+    {name = "Ashutosh Rana"},    
+    {name = "Jatin Sharma"},
+    {name = "Lakshika Tanwar"},
+    {name = "Vedansh Sharma"}, 
+]
+keywords = ["education", "management system", "college", "dbms", "dmjone", "shooliniuniversity", "shoolini", "Divya Mohan", "divyamohan1993"]
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+requires-python = ">=3.7"  # Specify the Python version requirement
 dependencies = [
     "mysql-connector-python>=8.0.23",
     "Faker>=8.1.1"
@@ -28,4 +38,5 @@ dependencies = [
 
 [project.urls]
 homepage = "https://dmj.one"
-repository = "https://github.com/dmjone/dmjone_pypi"
+repository = "https://github.com/dmjone/"
+documentation = "https://dmj.one/docs"  # Add a URL for your project's documentation if available
