@@ -10,12 +10,12 @@ summary = "A suite of public welfare and educational tools developed by dmj.one,
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
-    {name = "Divya Mohan", email = "divya@example.com"}
+    {name = "Divya Mohan", email = "contact@dmj.one"}
 ]
 maintainers = [
-    {name = "Aarushi Sharma", email = "aarushi@example.com"},
-    {name = "Kaustuv Sharma", email = "kaustuv@example.com"},
-    {name = "Lakshika Tanwar", email = "lakshika@example.com"}
+    {name = "Aarushi Sharma", email = "aarushi@dmj.one"},
+    {name = "Kaustuv Sharma", email = "kaustuv@dmj.one"},
+    {name = "Lakshika Tanwar", email = "lakshika@dmj.one"}
 ]
 keywords = ["education", "public welfare initiative", "learning resources", "shoolini university", "dmjone"]
 classifiers = [
