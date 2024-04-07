@@ -29,7 +29,7 @@ dmjone.kaustuv.calculate_absolute()
 
 ## Authors
 - **Divya Mohan** - *__init__* - [GitHub](https://github.com/divyamohan1993)
-- **Aarushi Sharma** - [GitHub](https://github.com/letscodeitup)
+- **Aarushi Sharma** - *Contributor* - [GitHub](https://github.com/letscodeitup)
 - **Anshuman Mohanty** - [GitHub](https://github.com/anshumanmohanty00)
 - **Ashutosh Rana**
 - **Jatin Sharma**
