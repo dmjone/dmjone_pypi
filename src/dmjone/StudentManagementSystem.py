@@ -221,5 +221,3 @@ def projectsms():
 
     def branding():
         print_fancy_header(project_info)
-    
-    start()
