@@ -8,7 +8,8 @@ from .StudentManagementSystem import projectsms
 from .aarushi_TodoList import TodoList
 
 # Section: Kaustuv Sharma
-import src.dmjone.kaustuv_common as kaustuv
-import src.dmjone.kaustuv_function2 as kaustuv_function2
+# import src.dmjone.kaustuv_common as kaustuv
+# import src.dmjone.kaustuv_function2 as kaustuv_function2
+# kaustuv.__dict__.update(kaustuv_function2.__dict__)
 
-kaustuv.__dict__.update(kaustuv_function2.__dict__)
+from .kaustuv import kaustuv
