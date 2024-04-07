@@ -12,7 +12,7 @@ from .aarushi_TodoList import TodoList
 # import src.dmjone.kaustuv_function2 as kaustuv_function2
 # kaustuv.__dict__.update(kaustuv_function2.__dict__)
 
-from .kaustuv import kaustuv
+import src.dmjone.kaustuv as kaustuv
 
 # Section: Lakshika Tanwar
 import src.dmjone.lakshika as lakshika
