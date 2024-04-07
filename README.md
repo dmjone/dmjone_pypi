@@ -26,8 +26,11 @@ import dmjone
 # Access the Student Management System
 dmjone.projectsms() # Ensure you have MySQL installed on your system if you are running it locally. 
 
-# Run a lab project
-dmjone.lab4()
+# hello there!
+dmjone.hello()
+
+# Get collaborating! - dmjone._your-name_.project
+dmjone.aarushi.TodoList()
 ```
 
 ## Documentation
