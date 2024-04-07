@@ -58,6 +58,7 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 - **Jatin Sharma**
 - **Kaustuv Sharma** - [GitHub](https://github.com/kaustuvsharma)
 - **Lakshika Tanwar** - [GitHub](https://github.com/LakshikaTanwar)
+- **Rijul Chaudhary** - [GitHub](https://github.com/Rijul777)
 - **Vedansh Sharma** - [GitHub](https://github.com/Elysian-Reverie)
 
 See also the list of [contributors](https://github.com/dmjone/dmjone_pypi/contributors) who participated in this project.
