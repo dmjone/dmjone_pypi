@@ -21,8 +21,10 @@ dmjone.projectsms() # Ensure you have MySQL installed on your system if you are 
 # hello there!
 dmjone.hello()
 
-# Get collaborating! - dmjone._your-name_.project
+# Get collaborating! - dmjone._your-name_.projectfunction()
 dmjone.aarushi.TodoList()
+dmjone.lakshika.calculator()
+dmjone.kaustuv.calculate_absolute()
 ```
 
 ## Authors
