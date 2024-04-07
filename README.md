@@ -32,7 +32,8 @@ dmjone.lab4()
 
 ## Documentation
 
-For comprehensive documentation, visit [dmj.one/](https://dmj.one/). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
+<!-- For comprehensive documentation, visit [dmj.one/docs](https://dmj.one/docs). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`. -->
+For comprehensive documentation, visit [dmj.one](https://dmj.one). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
 
 ## Contributing
 
