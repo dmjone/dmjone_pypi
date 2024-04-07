@@ -24,7 +24,7 @@ Here's a quick example to get you started with `dmjone`:
 import dmjone
 
 # Access the Student Management System
-dmjone.projectsms()
+dmjone.projectsms() # Ensure you have MySQL installed on your system if you are running it locally. 
 
 # Run a lab project
 dmjone.lab4()
@@ -32,7 +32,7 @@ dmjone.lab4()
 
 ## Documentation
 
-For comprehensive documentation, visit [dmj.one/docs](https://dmj.one/docs). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
+For comprehensive documentation, visit [dmj.one/docs](https://go.dmj.one/docs). Here, you'll find detailed information on how to make the most of the tools and resources offered by `dmjone`.
 
 ## Contributing
 
@@ -50,13 +50,14 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 ## Authors
 
-- **Divya Mohan** - *Initial Work* - [Divya Mohan](https://github.com/divyamohan1993)
-- **Aarushi Sharma**
-- **Anshuman Mohanty**
+- **Divya Mohan** - *Initial Work* - [GitHub](https://github.com/divyamohan1993)
+- **Aarushi Sharma** - [GitHub](https://github.com/letscodeitup)
+- **Anshuman Mohanty** - [GitHub](https://github.com/anshumanmohanty00)
 - **Ashutosh Rana**
 - **Jatin Sharma**
-- **Lakshika Tanwar**
-- **Vedansh Sharma**
+- **Kaustuv Sharma** - [GitHub](https://github.com/kaustuvsharma)
+- **Lakshika Tanwar** - [GitHub](https://github.com/LakshikaTanwar)
+- **Vedansh Sharma** - [GitHub](https://github.com/Elysian-Reverie)
 
 See also the list of [contributors](https://github.com/dmjone/dmjone_pypi/contributors) who participated in this project.
 
