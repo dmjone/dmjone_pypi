@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmjone"
-version = "0.1.9.8"
+version = "0.1.9.9"
 description = "Public Welfare initiatives by dmj.one - Educational Initiative"
 # summary = "A suite of public welfare and educational tools developed by dmj.one, focusing on accessibility and innovation in learning resources."
 readme = "README.md"
