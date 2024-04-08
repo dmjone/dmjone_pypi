@@ -1,4 +1,4 @@
-# dmjone [![Upload Python Package](https://github.com/dmjone/dmjone_pypi/actions/workflows/python-publish.yml/badge.svg)](https://github.com/dmjone/dmjone_pypi/actions/workflows/python-publish.yml)
+# dmjone
 
 Official Python package for [dmj.one](https://dmj.one) - a platform dedicated to public welfare initiatives with a strong focus on educational projects. Our mission is to provide accessible, innovative, and valuable tools and resources for students, educators, and the general public to promote learning and educational excellence.
 
