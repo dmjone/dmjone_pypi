@@ -68,7 +68,7 @@ ks.check_all_true()
 - **Educational Tools**: A collection of tools aimed at enhancing the learning experience.
 
 ## Authors
-- Subject Experts: **Dr. Anurag Rana** [GitHub](https://github.com/AI-ARana) | **Dr. Pankaj Vaidya**
+- Subject Matter Experts: **Dr. Anurag Rana** [GitHub](https://github.com/AI-ARana) | **Dr. Pankaj Vaidya** | **Dr. Gaurav Gupta** [GitHub](https://github.com/solangaurav)
 - **Divya Mohan** - _init_ - [GitHub](https://github.com/divyamohan1993) |  **Lakshika Tanwar** - *Top Contributor* - [GitHub](https://github.com/LakshikaTanwar) | **Aarushi Sharma** - *Contributor* - [GitHub](https://github.com/letscodeitup) | **Kaustuv Sharma** - *Contributor* - [GitHub](https://github.com/kaustuvsharma)
 - **Anshuman Mohanty** - [GitHub](https://github.com/anshumanmohanty00) | **Ashutosh Rana** | **Jatin Sharma** | **Rijul Chaudhary** - [GitHub](https://github.com/Rijul777) | **Subhojeet Ghosh** [GitHub](https://github.com/subhojeetghosh123) | **Vedansh Sharma** - [GitHub](https://github.com/Elysian-Reverie) | **Yuvraj Kumar** [GitHub](https://github.com/YuvRaj-Kumar-95)
 
