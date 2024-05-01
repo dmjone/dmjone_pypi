@@ -1,6 +1,6 @@
 ###### Saving all iterations for backup. 
 
-#iteration 1 - April 9th, 2024 10:49 AM
+#iteration 1 - April 6th, 2024 10:41 AM
 
 import mysql.connector
 
