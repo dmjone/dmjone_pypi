@@ -1,20 +1,28 @@
 ###### Saving all iterations for backup. 
 
-#iteration 5 - April 7th, 2024 02:33 AM
+#iteration 6 - April 7th, 2024 02:56 AM
 
 import mysql.connector
-from hashlib import sha256
 from datetime import datetime
 
+def caesar_cipher(text, shift):
+    result = ""
+    for i in range(len(text)):
+        char = text[i]
+        if char.isupper():
+            result += chr((ord(char) + shift - 65) % 26 + 65)
+        else:
+            result += chr((ord(char) + shift - 97) % 26 + 97)
+    return result
+
 def connect_db():
-    return mysql.connector.connect(
-        host="localhost", 
-        user=input("Enter username: "),         
-        passwd=input("Enter password: "), 
+    conn = mysql.connector.connect(
+        host="localhost",
+        user=input("Enter username: "),
+        passwd=input("Enter password: "),
         database=input("Enter database name: ")
-        #user="testuser",
-        #database= "csu357_project"
     )
+    return conn
 
 def execute_query(connection, query, data=None, commit=False):
     cursor = connection.cursor()
@@ -70,12 +78,8 @@ def setup_tables(connection):
         )
         """
     ]
-    try:
-        for query in queries:
-            execute_query(connection, query, commit=True)
-        print("Tables created successfully.")
-    except:
-        print("Tables already exist.")
+    for query in queries:
+        execute_query(connection, query, commit=True)
 
 def view_full_student_details(connection):
     query = """
@@ -93,32 +97,50 @@ def view_full_student_details(connection):
 
 def view_users(connection):
     for user_id, username, _, role in execute_query(connection, "SELECT user_id, username, password, role FROM users"):
-        print(f"User ID: {user_id}, Username: {username}, Role: {role}")    
+        print(f"User ID: {user_id}, Username: {username}, Role: {role}")
 
-def main_menu(connection):
+def user_login(connection):
+    username = input("Enter username: ")
+    password = caesar_cipher(input("Enter password: "), 3)  # Encrypt password using Caesar cipher
+    user = execute_query(connection, "SELECT role FROM users WHERE username = %s AND password = %s", (username, password))
+    if user:
+        print(f"Login successful. Welcome, {username}!")
+        return {"username": username, "role": user[0][0]}
+    else:
+        print("Login failed. Please check your username and password.")
+        exit()
+
+def check_access(user_role, required_roles):
+    if user_role not in required_roles:
+        print("Access denied. Insufficient permissions.")
+        exit()
+
+def main_menu(connection, user):
     options = {
-        "1": ("Create Tables", lambda: setup_tables(connection)),
-        "2": ("Add Student", lambda: execute_query(connection, "INSERT INTO students (name, age, dept) VALUES (%s, %s, %s)", (input("Enter student's name: "), int(input("Enter student's age: ")), input("Enter student's department: ")), True)),
-        "3": ("View Students", lambda: view_full_student_details(connection)),
+        "1": ("Create Tables", lambda: setup_tables(connection), ["admin"]),
+        "2": ("Add Student", lambda: execute_query(connection, "INSERT INTO students (name, age, dept) VALUES (%s, %s, %s)", (input("Enter student's name: "), int(input("Enter student's age: ")), input("Enter student's department: ")), True), ["admin", "staff"]),  # Functionality placeholders
+        "3": ("View Students", lambda: view_full_student_details(connection), ["admin", "staff", "student"]),
         "4": ("Add Course", lambda: execute_query(connection, "INSERT INTO courses (course_name, course_duration) VALUES (%s, %s)", (input("Enter course name: "), input("Enter course duration: ")), True)),
         "5": ("Enroll Student in Course", lambda: execute_query(connection, "INSERT INTO enrollments (student_id, course_id, enrollment_date) VALUES (%s, %s, %s)", (int(input("Enter student ID: ")), int(input("Enter course ID: ")), datetime.now().date()), True)),
-        "6": ("Add User", lambda: execute_query(connection, "INSERT INTO users (username, password, role) VALUES (%s, %s, %s)", (input("Enter username: "), sha256(input("Enter password: ").encode('utf-8')).hexdigest(), input("Enter user role: ")), True)),
+        "6": ("Add User", lambda: execute_query(connection, "INSERT INTO users (username, password, role) VALUES (%s, %s, %s)", (input("Enter username: "), caesar_cipher(input("Enter password: "), 3), input("Enter user role (admin / staff / student): ")), True)),
         "7": ("Assign Grade", lambda: execute_query(connection, "INSERT INTO grades (student_id, course_id, grade) VALUES (%s, %s, %s)", (int(input("Enter student ID for grading: ")), int(input("Enter course ID for grading: ")), input("Enter grade (A, B, C, D, F): ")), True)),
         "8": ("View Users", lambda: view_users(connection)),
         "9": ("Exit", lambda: exit())
+        # Additional functionalities with RBAC
     }
-    while True:        
-        choice = input("\n".join([f"{key}. {value[0]}" for key, value in options.items()]) + "\nChoose an option: ")
+    while True:
+        print("\nChoose an option:")
+        for key, value in options.items():
+            print(f"{key}. {value[0]}")
+        choice = input()
         if choice in options:
-            options[choice][1]()
+            action, roles = options[choice][1], options[choice][2]
+            check_access(user["role"], roles)
+            action()
         else:
             print("Invalid option.")
 
 if __name__ == "__main__":
-    connection = connect_db()    
-    print("\n================================================================================")
-    print("\t\t\tStudent Management System - dmj.one")
-    print("\tMade as DBMS CSU357 Class Project by Anshuman Mohanty, Ashutosh Rana,")
-    print("\t\t     Divya Mohan, Jatin Sharma, Vedansh Sharma")
-    print("================================================================================\n")
-    main_menu(connection)
+    connection = connect_db()
+    user = user_login(connection)
+    main_menu(connection, user)
