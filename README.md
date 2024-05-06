@@ -61,6 +61,8 @@ ks.check_all_true()
 #### Lakshika Tanwar
 - **Typecasting**: Demonstrate Typecasting in python
 - **Calculator**: Calculator to do arithmetic operations on numbers
+#### Rijul Choudhary
+- **Snake Game**: Play python snake game and have somme fun. 
 
 ## Highlighted Features and Collaborations
 - **Student Management System**: A simple yet powerful system for managing student records, designed for educational institutions.
