@@ -1,3 +1,14 @@
+'''
+Access the game by installing dmjone package. 
+
+    pip install dmjone
+
+Then import dmjone and call the package. 
+
+    import dmjone
+    dmjone.rijul.snakegame()
+'''
+
 import pygame
 from pygame.locals import *
 import time
