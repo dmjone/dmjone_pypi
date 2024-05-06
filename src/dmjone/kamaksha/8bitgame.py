@@ -316,7 +316,7 @@ def intro(
 		pygame.draw.rect(screen, (c2, colox_c1, colox_c2), [width - 40,
 						0, 40, height])
 		smallfont = pygame.font.SysFont('Corbel', 35)
-		sig = smallfont.render('Designed by :- Antriksh', True, white)
+		sig = smallfont.render('Designed by :- kamaksha', True, white)
 		text = smallfont.render('Start', True, white)
 		text1 = smallfont.render('Options', True, white)
 		exit1 = smallfont.render('Exit', True, white)
@@ -339,4 +339,3 @@ intro(
 	text1,
 	text,
 	)
-
