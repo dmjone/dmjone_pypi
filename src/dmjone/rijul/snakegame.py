@@ -97,17 +97,28 @@ class Game:
         self.apple = Apple(self.surface)
         self.apple.draw()
 
+
+
+
+
+    ################################## TO FIX  -  AUDIO LINKAGE - DMJ ######################################
+
+
+    # Was using user specific onedrive link. - deleted. 
+
     def play_background_music(self):
-        pygame.mixer.music.load(r'C:\Users\rijul\OneDrive\Desktop\PyGame-Snake game\recources\bgm.mp3')
+        pygame.mixer.music.load(r'recources\bgm.mp3')
         pygame.mixer.music.play(-1, 0)
 
     def play_sound(self, sound_name):
         if sound_name == "crash":
-            sound = pygame.mixer.Sound(r'C:\Users\rijul\OneDrive\Desktop\PyGame-Snake game\recources\crash.mp3')
+            sound = pygame.mixer.Sound(r'recources\crash.mp3')
         elif sound_name == "ding":
-            sound = pygame.mixer.Sound(r'C:\Users\rijul\OneDrive\Desktop\PyGame-Snake game\recources\ding.mp3')
+            sound = pygame.mixer.Sound(r'recources\ding.mp3')
 
         pygame.mixer.Sound.play(sound)
+
+    ################################## TO FIX  -  AUDIO LINKAGE END - DMJ ######################################
 
     def reset(self):
         self.snake = Snake(self.surface)
