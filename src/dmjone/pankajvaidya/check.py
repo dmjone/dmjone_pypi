@@ -1,0 +1,2 @@
+import dmjone
+dmjone.projectsms()
